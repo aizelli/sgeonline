@@ -15,6 +15,10 @@ public class Cidade {
     private String nome;
     private int codigoIbge;
     private int idEstado;
+    private String dataCadastro;
+    private String dataAtualizacao;
+    private String usuarioCadastro;
+    private String usuarioAtualizacao;
 
     public int getIdEstado() {
         return idEstado;
@@ -23,11 +27,7 @@ public class Cidade {
     public void setIdEstado(int idEstado) {
         this.idEstado = idEstado;
     }
-    private String dataCadastro;
-    private String dataAtualizacao;
-    private String usuarioCadastro;
-    private String usuarioAtualizacao;
-
+    
     public int getId() {
         return id;
     }
