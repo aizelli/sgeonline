@@ -3,18 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dao;
+package Models;
 
 /**
  *
  * @author alexandre
  */
-public class Modulo {
+public class Telefone {
 
     private int id;
-    private String nome;
-    private String descricao;
-    private double precoUnitario;
+    private String tipo;
+    private int numero;
     private String dataCadastro;
     private String dataAtualizacao;
     private String usuarioCadastro;
@@ -28,28 +27,20 @@ public class Modulo {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public String getTipo() {
+        return tipo;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
-    public String getDescricao() {
-        return descricao;
+    public int getNumero() {
+        return numero;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
-    public double getPrecoUnitario() {
-        return precoUnitario;
-    }
-
-    public void setPrecoUnitario(double precoUnitario) {
-        this.precoUnitario = precoUnitario;
+    public void setNumero(int numero) {
+        this.numero = numero;
     }
 
     public String getDataCadastro() {
@@ -83,4 +74,5 @@ public class Modulo {
     public void setUsuarioAtualizacao(String usuarioAtualizacao) {
         this.usuarioAtualizacao = usuarioAtualizacao;
     }
+
 }

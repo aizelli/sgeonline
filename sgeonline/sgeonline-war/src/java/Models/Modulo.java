@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dao;
+package Models;
 
 /**
  *
  * @author alexandre
  */
-public class Estado {
+public class Modulo {
 
     private int id;
     private String nome;
-    private String sigla;
-    private int codigoIbge;
+    private String descricao;
+    private double precoUnitario;
     private String dataCadastro;
     private String dataAtualizacao;
     private String usuarioCadastro;
@@ -36,20 +36,20 @@ public class Estado {
         this.nome = nome;
     }
 
-    public String getSigla() {
-        return sigla;
+    public String getDescricao() {
+        return descricao;
     }
 
-    public void setSigla(String sigla) {
-        this.sigla = sigla;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 
-    public int getCodigoIbge() {
-        return codigoIbge;
+    public double getPrecoUnitario() {
+        return precoUnitario;
     }
 
-    public void setCodigoIbge(int codigoIbge) {
-        this.codigoIbge = codigoIbge;
+    public void setPrecoUnitario(double precoUnitario) {
+        this.precoUnitario = precoUnitario;
     }
 
     public String getDataCadastro() {

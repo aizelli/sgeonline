@@ -3,26 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dao;
+package Models;
 
 /**
  *
  * @author alexandre
  */
-public class Pessoa {
+public class ContasPagar {
 
     private int id;
-    private String nome;
-    private String endereco;
-    private int cep;
+    private String numeroDocumento;
+    private double valor;
+    private double desconto;
+    private double acrescimo;
+    private String dataPagamento;
+    private String dataVencimento;
     private String dataCadastro;
     private String dataAtualizacao;
     private String usuarioCadastro;
     private String usuarioAtualizacao;
-    private String email;
-    private String senha;
-    private int idControleAcesso;
-    private String tabela;
 
     public int getId() {
         return id;
@@ -32,28 +31,52 @@ public class Pessoa {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public String getNumeroDocumento() {
+        return numeroDocumento;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNumeroDocumento(String numeroDocumento) {
+        this.numeroDocumento = numeroDocumento;
     }
 
-    public String getEndereco() {
-        return endereco;
+    public double getValor() {
+        return valor;
     }
 
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
+    public void setValor(double valor) {
+        this.valor = valor;
     }
 
-    public int getCep() {
-        return cep;
+    public double getDesconto() {
+        return desconto;
     }
 
-    public void setCep(int cep) {
-        this.cep = cep;
+    public void setDesconto(double desconto) {
+        this.desconto = desconto;
+    }
+
+    public double getAcrescimo() {
+        return acrescimo;
+    }
+
+    public void setAcrescimo(double acrescimo) {
+        this.acrescimo = acrescimo;
+    }
+
+    public String getDataPagamento() {
+        return dataPagamento;
+    }
+
+    public void setDataPagamento(String dataPagamento) {
+        this.dataPagamento = dataPagamento;
+    }
+
+    public String getDataVencimento() {
+        return dataVencimento;
+    }
+
+    public void setDataVencimento(String dataVencimento) {
+        this.dataVencimento = dataVencimento;
     }
 
     public String getDataCadastro() {
@@ -86,37 +109,5 @@ public class Pessoa {
 
     public void setUsuarioAtualizacao(String usuarioAtualizacao) {
         this.usuarioAtualizacao = usuarioAtualizacao;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getSenha() {
-        return senha;
-    }
-
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
-
-    public int getIdControleAcesso() {
-        return idControleAcesso;
-    }
-
-    public void setIdControleAcesso(int idControleAcesso) {
-        this.idControleAcesso = idControleAcesso;
-    }
-
-    public String getTabela() {
-        return tabela;
-    }
-
-    public void setTabela(String tabela) {
-        this.tabela = tabela;
     }
 }

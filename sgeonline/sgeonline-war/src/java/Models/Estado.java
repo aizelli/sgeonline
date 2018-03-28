@@ -3,17 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dao;
+package Models;
 
 /**
  *
  * @author alexandre
  */
-public class Telefone {
+public class Estado {
 
     private int id;
-    private String tipo;
-    private int numero;
+    private String nome;
+    private String sigla;
+    private int codigoIbge;
     private String dataCadastro;
     private String dataAtualizacao;
     private String usuarioCadastro;
@@ -27,20 +28,28 @@ public class Telefone {
         this.id = id;
     }
 
-    public String getTipo() {
-        return tipo;
+    public String getNome() {
+        return nome;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public int getNumero() {
-        return numero;
+    public String getSigla() {
+        return sigla;
     }
 
-    public void setNumero(int numero) {
-        this.numero = numero;
+    public void setSigla(String sigla) {
+        this.sigla = sigla;
+    }
+
+    public int getCodigoIbge() {
+        return codigoIbge;
+    }
+
+    public void setCodigoIbge(int codigoIbge) {
+        this.codigoIbge = codigoIbge;
     }
 
     public String getDataCadastro() {
@@ -74,5 +83,4 @@ public class Telefone {
     public void setUsuarioAtualizacao(String usuarioAtualizacao) {
         this.usuarioAtualizacao = usuarioAtualizacao;
     }
-
 }
